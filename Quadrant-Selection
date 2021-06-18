@@ -1,0 +1,29 @@
+public class Quadrant-Selection {
+    static int quad(int x, int y){
+        if( x != 0 && y != 0){
+            if(x>0 && y >0){
+                return 1;
+            }
+            else if(x>0 && y<0){
+                return 4;
+            }
+            else if(x<0 && y>0){
+                return 2;
+            }
+            else{
+                return 3;
+            }
+        }
+        return 404;
+    }
+
+    public static void main(String[] args) {
+	// write your code here
+        System.out.println(quad(10,6));
+        System.out.println(quad(9,-13));
+        System.out.println(quad(0,0));
+
+
+
+    }
+}
