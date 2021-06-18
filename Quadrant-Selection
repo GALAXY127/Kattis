@@ -1,5 +1,10 @@
+import java.util.Scanner;
+
 public class Quadrant-Selection {
-    static int quad(int x, int y){
+    static int quad(){
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
         if( x != 0 && y != 0){
             if(x>0 && y >0){
                 return 1;
@@ -19,9 +24,8 @@ public class Quadrant-Selection {
 
     public static void main(String[] args) {
 	// write your code here
-        System.out.println(quad(10,6));
-        System.out.println(quad(9,-13));
-        System.out.println(quad(0,0));
+        System.out.println(quad());
+
 
 
 
