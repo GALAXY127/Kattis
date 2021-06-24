@@ -5,10 +5,7 @@ public class Aaah{
         Scanner sc = new Scanner(System.in);
         String x = sc.nextLine();
         String y = sc.nextLine();
-        if(x.length() >= y.length()){
-            return "go";
-        }
-        return "no";
+        return ((x.length() >= y.length()) ? "go" : "no");
     }
     public static void main(String[] args) {
         
