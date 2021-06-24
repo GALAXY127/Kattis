@@ -5,13 +5,13 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class Main {
+public class PachydermPeanutPacking {
 	double x1 =0;
 	double x2 =0;
 	double y1 =0;
 	double y2 =0;
 	String boxSize;
-	static Main [] array;
+	static PachydermPeanutPacking [] array;
 	public Main (String pos) {
 		String[] value = pos.split(" ");
 		this.x1 = Double.parseDouble(value[0]);
@@ -21,7 +21,7 @@ public class Main {
 		this.boxSize = value[4];
 	}
 	
-	public Main() {
+	public PachydermPeanutPacking() {
 		x1=0;
 		x2=0;
 		y1=0;
